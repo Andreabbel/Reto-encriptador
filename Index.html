@@ -1,1 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Textos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        input, textarea, button {
+            display: block;
+            margin: 10px 0;
+            padding: 10px;
+            width: 100%;
+            max-width: 500px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Encriptador de Textos</h1>
+    <textarea id="textInput" rows="4" placeholder="Ingresa el texto aquí..."></textarea>
+    
+    <label for="action">Selecciona una acción:</label>
+    <select id="action">
+        <option value="encrypt">Encriptar</option>
+        <option value="decrypt">Desencriptar</option>
+    </select>
 
+    <button onclick="processText()">Procesar</button>
+
+    <textarea id="result" rows="4" readonly placeholder="Resultado aparecerá aquí..."></textarea>
+    <button onclick="copyToClipboard()">Copiar al portapapeles</button>
+
+    <script src="app.js"></script>
+</body>
+</html>
