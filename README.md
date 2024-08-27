@@ -1,4 +1,5 @@
 Encriptador de Textos
+
 Esta aplicación web encripta y desencripta texto utilizando reglas de sustitución de caracteres. También muestra una imagen de placeholder cuando el campo de texto está vacío, y la oculta al ingresar texto.
 
 Funcionalidades
